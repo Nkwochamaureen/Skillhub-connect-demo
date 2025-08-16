@@ -1,0 +1,6 @@
+{
+  "tasks": [
+    { "_id": 1, "title": "Build Foundation", "status": "In Progress" },
+    { "_id": 2, "title": "Install Framework", "status": "Pending" }
+  ]
+}

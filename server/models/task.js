@@ -1,9 +1,7 @@
 const mongoose = require('mongoose');
-
 const taskSchema = new mongoose.Schema({
+  _id: Number,
   title: String,
-  description: String,
   status: String
 });
-
 module.exports = mongoose.model('Task', taskSchema);
