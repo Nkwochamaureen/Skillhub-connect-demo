@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import backgroundImage from './images/background.jpg'; 
+import backgroundImage from './images/background.jpeg'; 
 import './App.css';
 
 function App() {

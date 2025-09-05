@@ -1,5 +1,10 @@
 .App {
   font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background-image: url('/images/background.jpeg'); /* Relative to public root, adjust if needed */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .linkedin-btn {
