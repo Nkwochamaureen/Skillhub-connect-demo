@@ -1,10 +1,62 @@
 .App {
   font-family: Arial, sans-serif;
   min-height: 100vh;
-  background-image: url('/images/background.jpeg'); /* Relative to public root, adjust if needed */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #000; /* solid black background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-box {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0,123,225,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 600px) {
+  .login-box {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .login-title {
+    font-size: 1.5rem;
+  }
+
+  .login-subtext {
+    font-size: 0.9rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+}
+
+.login-image {
+  width: 300px; /* or any size you want */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.login-box h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  margin-top: 20px;
 }
 
 .linkedin-btn {
@@ -13,19 +65,41 @@
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
-  border-radius: 4px;
+  border-radius: 8px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
 }
 
 .linkedin-btn:hover {
-  background-color: #005983;
+  background-color: #005582;
 }
 
 button:disabled {
   cursor: not-allowed;
   opacity: 0.6;
+}
+
+#dashboard {
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+/* In your global CSS (e.g., App.css or index.css) */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000; /* already black, just explicit */
+}
+
+.login-subtext {
+  color: #ccc;
+  margin-top: -10px;
+  font-size: 1rem;
+  text-align: center;
 }
